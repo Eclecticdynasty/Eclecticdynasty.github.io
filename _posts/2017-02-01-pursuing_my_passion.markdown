@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "PURSUING MY PASSION**"
-date:   2017-02-01 17:46:47 +0000
+title:  "PURSUING MY PASSION"
+date:   2017-02-01 12:46:48 -0500
 ---
 
 
