@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PURSUING MY PASSION"
+title:  "Pursuing my passion"
 date:   2017-02-01 12:46:48 -0500
 ---
 
