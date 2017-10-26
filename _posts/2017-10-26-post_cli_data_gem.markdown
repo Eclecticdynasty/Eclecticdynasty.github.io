@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Post Cli Data Gem"
-date:       2017-10-26 19:21:25 +0000
+date:       2017-10-26 15:21:25 -0400
 permalink:  post_cli_data_gem
 ---
 
@@ -14,7 +14,8 @@ I wanted to make a blog post about a few of those things. Hopefully, it'll help 
 
 Scraping was the most challenging part of the cli gem for me. My gem was a command line interface that gives the user a list of books to read before they die. When I scraped my data, I scraped the information for one book instead of the entire list. I used the cli data gem walkthrough video as a guideline so my scraper looked very similiar to this:
 
-```ruby 
+```
+ruby 
 def self.scrape_woot
     doc = Nokogiri::HTML(open("https://woot.com"))
 
@@ -32,7 +33,8 @@ def self.scrape_woot
 While this works perfectly for trying to scrape one item, it's not a great viable method for scraping a collection of data for many items. This is where iterating comes into play. *Iterating* is when you have a collection of data like an array, and you want to operate on each member of that collection.  That's what I needed to do in order for my cli gem to work best for the user. 
 
 
-```ruby
+```
+ruby
  def self.scrape_details
     doc = Nokogiri::HTML(open("http://www.powells.com/25-books-to-read-before-you-die"))
 
