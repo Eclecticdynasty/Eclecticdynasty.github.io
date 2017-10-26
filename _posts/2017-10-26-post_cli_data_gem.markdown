@@ -27,7 +27,7 @@ def self.scrape_woot
 
     deal
   end
-	```
+```
 	
 	
 While this works perfectly for trying to scrape one item, it's not a great viable method for scraping a collection of data for many items. This is where iterating comes into play. *Iterating* is when you have a collection of data like an array, and you want to operate on each member of that collection.  That's what I needed to do in order for my cli gem to work best for the user. 
@@ -46,7 +46,7 @@ ruby
       book.save
 
     end
-		```
+	```
 		
 Getting to this new method took quite a bit of time. Revisiting past lessons and labs helped a ton but what I gained the most help from were the study groups. Hearing the other issues and suggestions other people who were also working on their cli gem had to offer help in that many times they pointed me in the right direction of the solution I was looking for. Also, don't be afraid to make an appoinment with an instructor for help. I know it can feel like you're not sure of the right question to ask that will properly or prefectly explain what issue you're having but, ask anyway. Sometimes someone's response can lead you to asking a better question. 
 
