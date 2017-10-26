@@ -14,8 +14,7 @@ I wanted to make a blog post about a few of those things. Hopefully, it'll help 
 
 Scraping was the most challenging part of the cli gem for me. My gem was a command line interface that gives the user a list of books to read before they die. When I scraped my data, I scraped the information for one book instead of the entire list. I used the cli data gem walkthrough video as a guideline so my scraper looked very similiar to this:
 
-```
-ruby 
+``` 
 def self.scrape_woot
     doc = Nokogiri::HTML(open("https://woot.com"))
 
@@ -34,7 +33,6 @@ While this works perfectly for trying to scrape one item, it's not a great viabl
 
 
 ```
-ruby
  def self.scrape_details
     doc = Nokogiri::HTML(open("http://www.powells.com/25-books-to-read-before-you-die"))
 
