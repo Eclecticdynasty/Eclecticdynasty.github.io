@@ -31,9 +31,8 @@ def self.scrape_woot
 	
 While this works perfectly for trying to scrape one item, it's not a great viable method for scraping a collection of data for many items. This is where iterating comes into play. *Iterating* is when you have a collection of data like an array, and you want to operate on each member of that collection.  That's what I needed to do in order for my cli gem to work best for the user. 
 
-
 ```
- def self.scrape_details
+def self.scrape_details
     doc = Nokogiri::HTML(open("http://www.powells.com/25-books-to-read-before-you-die"))
 
     doc.css('div.readbefore_box').each do |book_css|
