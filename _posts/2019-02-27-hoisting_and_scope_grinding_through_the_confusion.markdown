@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Hoisting and Scope: Grinding through the confusion"
-date:       2019-02-28 02:40:35 +0000
+date:       2019-02-27 21:40:36 -0500
 permalink:  hoisting_and_scope_grinding_through_the_confusion
 ---
 
@@ -44,13 +44,13 @@ We have a function, greet, that logs a string. When the greet is invoked as a fu
 **Arrow functions** help to simplify function scope and much using the 'this keyword' much more straightforward. 
 
 
-Now on to a few key points within the concept of* hoisting*. All variable declarations using** var ** are hoisted to the top of their local/functional scope or to the top of their global scope regardless of where the actual declaration has been made. **Function declarations** are also hoisted. 
+Now on to a few key points within the concept of *hoisting*. All variable declarations using**var**  are hoisted to the top of their local/functional scope or to the top of their global scope regardless of where the actual declaration has been made. **Function declarations** are also hoisted. 
 A function declaration defines a function; function expressions are quite different. 
 **Function expressions** are not hoisted and will return a *TypeError* because you cannot use function expressions before defining them. 
 
-Variable hoisting can be different based on the variable keyword used when a variable is declared. Keep in mind that while* variable declarations are hoisted, the actual value given to the variable is not*. The difference between **var**,** let** and **const** is that let and const will throw a *Reference Error* if you try to call one before it has been assigned a value. In regards to, block statements let and const keywords support the declaration of local scope inside block statements.
+Variable hoisting can be different based on the variable keyword used when a variable is declared. Keep in mind that while* variable declarations are hoisted, the actual value given to the variable is not*. The difference between **var**, **let** and **const** is that let and const will throw a *Reference Error* if you try to call one before it has been assigned a value. In regards to, block statements let and const keywords support the declaration of local scope inside block statements.
 
-A **var** keyword variable declaration returns undefined. **Undefined ** means that JS recognizes that the variable name exists. This is because when you see ```var a = 2;```, you probably think of that as one statement. But JavaScript actually thinks of it as two statements: ```var a; and a = 2;```. The first statement, the declaration, is processed during the compilation phase. The second statement, the assignment, is left in place for the execution phase.
+A **var** keyword variable declaration returns undefined. **Undefined** means that JS recognizes that the variable name exists. This is because when you see ```var a = 2;```, you probably think of that as one statement. But JavaScript actually thinks of it as two statements: ```var a; and a = 2;```. The first statement, the declaration, is processed during the compilation phase. The second statement, the assignment, is left in place for the execution phase.
 
 These concepts are still confusing and in my research, it seems there are JS programmers with more experience who still struggle with it from time to time(which I find comforting) but with time and experience understanding hoisting and scope will get easier. 
 
